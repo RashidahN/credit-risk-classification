@@ -1,31 +1,21 @@
-# Module 12 Report Template
-
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+The analysis aimed to build machine learning models to predict loan risk status as either "healthy" (0) or "high-risk" (1) using various financial metrics. A Logistic Regression model was trained, and its performance was evaluated using accuracy, precision, recall, and balanced accuracy scores. The RandomOverSampler method was employed to address class imbalance.
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+# Basic Logistic Regression
+Accuracy: ~99.41%
+Precision: 100% (healthy), 86% (high-risk)
+Recall: 99% (healthy), 98% (high-risk)
+Balanced Accuracy: ~98.84%
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+# Logistic Regression with Oversampling
+Accuracy: (To be filled)
+Precision: (To be filled)
+Recall: (To be filled)
+Balanced Accuracy: (To be filled)
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+The basic Logistic Regression model demonstrated high accuracy, precision, recall, and balanced accuracy for both classes, making it the recommended model for this problem. However, the performance could vary depending on the specific problem and the importance of correctly predicting high-risk loans.
